@@ -1,4 +1,4 @@
-package homework_3;
+package ua_hillel.homework_3;
 
 public class Operations {
     public static void main(String[] args) {
