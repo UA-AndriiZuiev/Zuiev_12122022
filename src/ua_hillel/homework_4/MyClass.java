@@ -1,5 +1,5 @@
 package ua_hillel.homework_4;
-//import java.lang.reflect.Array;
+
 import java.util.*;
 public class MyClass {
  public void calcSin(){
