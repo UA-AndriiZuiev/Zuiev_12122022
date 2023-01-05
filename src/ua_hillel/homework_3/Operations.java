@@ -1,124 +1,112 @@
 package ua_hillel.homework_3;
+import java.util.Scanner;
 
 public class Operations {
     public static void main(String[] args) {
-    //-------------------------------------------------//
         int number = 5;
-        Operations operations = new Operations();
-        operations.checkOddEven(number);
+        String oddEven, month;
+        Scanner scanner = new Scanner(System.in);
+
+    //-------------------------------------------------//
+        oddEven = checkOddEven(number);
+        System.out.println(oddEven);
         System.out.println("BYE");
     //-------------------------------------------------//
-        operations.printMonthInWord_1(number);
-        operations.printMonthInWord_2(number+1);
+        System.out.println(printMonthInWord_1(number));
+        month = printMonthInWord_2(number+1);
+        System.out.println(month);
     //-------------------------------------------------//
-        operations.magnitude();
+        System.out.print("Введіть два числа для визначення більшого з них значення - ");
+        int number_1 = scanner.nextInt();
+        int number_2 = scanner.nextInt();
+        magnitude(number_1, number_2);
     //-------------------------------------------------//
-        operations.triangle();
+        int side_1 = 8;
+        int side_2 = 8;
+        int side_3 = 8;
+
+        triangle(side_1, side_2, side_3);
     }
 
-    public void checkOddEven(int a){
-        if ((a % 2) == 0)
-            System.out.println("Even Number");
+    public static String checkOddEven(int i){
+        if ((i % 2) == 0)
+            return "Even Number";
         else
-            System.out.println("Odd Number");
+            return "Odd Number";
     }
 
-    public void printMonthInWord_1(int a){
-        String result;
-
-        if(a==1)
-            result = "JAN";
-        else if(a==2)
-            result = "FEB";
-        else if(a==3)
-            result = "MAR";
-        else if(a==4)
-            result = "APR";
-        else if(a==5)
-            result = "MAY";
-        else if(a==6)
-            result = "JUN";
-        else if(a==7)
-            result = "JUL";
-        else if(a==8)
-            result = "AUG";
-        else if(a==9)
-            result = "SEP";
-        else if(a==10)
-            result = "OCT";
-        else if(a==11)
-            result = "NOV";
-        else if(a==12)
-            result = "DEC";
+    public static String printMonthInWord_1(int i){
+        if(i==1)
+            return "JAN";
+        else if(i==2)
+            return  "FEB";
+        else if(i==3)
+            return "MAR";
+        else if(i==4)
+            return "APR";
+        else if(i==5)
+            return "MAY";
+        else if(i==6)
+            return "JUN";
+        else if(i==7)
+            return "JUL";
+        else if(i==8)
+            return "AUG";
+        else if(i==9)
+            return "SEP";
+        else if(i==10)
+            return "OCT";
+        else if(i==11)
+            return "NOV";
+        else if(i==12)
+            return "DEC";
         else
-            result = "Not a valid month";
-        System.out.println(result);
+            return "Not a valid month";
     }
 
-    public void printMonthInWord_2(int a){
-        String result;
-        switch (a) {
+    public static String printMonthInWord_2(int i){
+        switch (i) {
             case 1:
-                result = "JAN";
-                break;
+                return "JAN";
             case 2:
-                result = "FAB";
-                break;
+                return "FAB";
             case 3:
-                result = "MAR";
-                break;
+                return "MAR";
             case 4:
-                result = "APR";
-                break;
+                return "APR";
             case 5:
-                result = "MAY";
-                break;
+                return "MAY";
             case 6:
-                result = "JUN";
-                break;
+                return "JUN";
             case 7:
-                result = "JUL";
-                break;
+                return "JUL";
             case 8:
-                result = "AUG";
-                break;
+                return "AUG";
             case 9:
-                result = "SEP";
-                break;
+                return "SEP";
             case 10:
-                result = "OCT";
-                break;
+                return "OCT";
             case 11:
-                result = "NOV";
-                break;
+                return "NOV";
             case 12:
-                result = "DEC";
-                break;
+                return "DEC";
             default:
-                result = "Not a valid month";
+                return "Not a valid month";
         }
-        System.out.println(result);
     }
 
-    public void magnitude (){
-        int a = 3;
-        int b = -9;
-        int result;
-        if (Math.abs(a) > Math.abs(b))
-            System.out.println("Число " + a + " має велику величину");
-        else if (Math.abs(a) < Math.abs(b))
-            System.out.println("Число " + b + " має велику величину");
+    public static void magnitude (int number_1, int number_2){
+        if (Math.abs(number_1) > Math.abs(number_2))
+            System.out.println("Число " + number_1 + " має велику величину");
+        else if (Math.abs(number_1) < Math.abs(number_2))
+            System.out.println("Число " + number_2 + " має велику величину");
         else
-            System.out.println("Числа " + a + " и " + b + " мають однакову величину");
-
+            System.out.println("Числа " + number_1 + " и " + number_2 + " мають однакову величину");
     }
 
-    public void triangle(){
-        int a = 4;
-        int b = 8;
-        int c = 4;
+    public static void triangle(int side_1, int side_2,int side_3){
 
-        if(a==b || a==c || a==c)
+        if(side_1 == side_2 || side_1 == side_3 || side_2 == side_3)
            System.out.println("Трикутник рівнобедрений");
         else
            System.out.println("Трикутник  нерівнобедрений");
