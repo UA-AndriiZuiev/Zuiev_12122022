@@ -1,12 +1,14 @@
 package ua_hillel.homework_5;
 
 public class Main {
+    // =====   Инициализация входных данных для примера   =====  //
     private static String[] nameInit = {"Will", "Jackie", "Sherlock"};
     private static String[] surnameInit = {"Smith", "Chan", "Holmes"};
     private static String[] cityInit = {"New York", "Shanghai", "London"};
     private static String[] phoneNumberInit = {"+11073273611", "+22937766322", "+3399287733"};
-    private static boolean[] activnumber = {true, false, true};
-    private static String[] status = {Balance.no_debt.toString(), Balance.have_a_debt.toString(), Balance.unlimited.toString()};
+    private static boolean[] activnumber = {true, false, true};  // активный номер или заблокированный
+    private static String[] status = {Balance.no_debt.toString(), Balance.have_a_debt.toString(),
+            Balance.unlimited.toString()};  // наличие задолженности абонента
 
     public static void main(String[] args) {
         for (int count = 0; count < nameInit.length; count++) {

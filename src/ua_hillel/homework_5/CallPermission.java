@@ -1,4 +1,5 @@
 package ua_hillel.homework_5;
+// == Проврка на наличие возможности совершения звонка ==//
 
 public class CallPermission {
 
