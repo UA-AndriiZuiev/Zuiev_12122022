@@ -3,8 +3,8 @@ package ua_hillel.homework_5;
 public class PersonExtention extends Person {
     private boolean activnumber;
     private String status;
-    CallPermission callPermission = new CallPermission();
-    CheckProblemCall checkProblemCall = new CheckProblemCall();
+    CallPermission callPermission;// = new CallPermission();
+    CheckProblemCall checkProblemCall;// = new CheckProblemCall();
 
     public PersonExtention(String name, String surname, String city, String phoneNumber, boolean activnumber, String status) {
         super(name, surname, city, phoneNumber);

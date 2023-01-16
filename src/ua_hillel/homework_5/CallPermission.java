@@ -3,8 +3,8 @@ package ua_hillel.homework_5;
 
 public class CallPermission {
 
-    public boolean checkToCall(PersonExtention personExtention) {
-        if (personExtention.getStatus() == Balance.have_a_debt.toString())
+    public static boolean checkToCall(PersonExtention personExtention) {
+        if (personExtention.getStatus() == Balance.HAVE_A_DEBT.toString())
             return false;
         if (!personExtention.getActivnumber())
             return false;

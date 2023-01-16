@@ -2,7 +2,7 @@ package ua_hillel.homework_5;
 //== Проверка задолженности абонента ==//
 
 public enum Balance {
-    have_a_debt,
-    no_debt,
-    unlimited
+    HAVE_A_DEBT,
+    NO_DEBT,
+    UNLIMITED
 }

@@ -2,12 +2,13 @@ package ua_hillel.homework_5;
 // ===== Предоставление информации о причинах невозможности совершить звонок ==== //
 
 public class CheckProblemCall {
-    private String status = null;
-    public String checkProblemCall(PersonExtention personExtention) {
+
+    public static String checkProblemCall(PersonExtention personExtention) {
+        String status = null;
         if (!personExtention.getActivnumber()) {
             status = "Номер заблоковано.";
         }
-        if (personExtention.getStatus() == Balance.have_a_debt.toString()) {
+        if (personExtention.getStatus() == Balance.HAVE_A_DEBT.toString()) {
             if (status != null)
                 status += " На рахунку недостатньо коштiв.";
             else {

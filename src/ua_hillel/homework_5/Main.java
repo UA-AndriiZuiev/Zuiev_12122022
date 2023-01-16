@@ -7,8 +7,8 @@ public class Main {
     private static String[] cityInit = {"New York", "Shanghai", "London"};
     private static String[] phoneNumberInit = {"+11073273611", "+22937766322", "+3399287733"};
     private static boolean[] activnumber = {true, false, true};  // активный номер или заблокированный
-    private static String[] status = {Balance.no_debt.toString(), Balance.have_a_debt.toString(),
-            Balance.unlimited.toString()};  // наличие задолженности абонента
+    private static String[] status = {Balance.NO_DEBT.toString(), Balance.HAVE_A_DEBT.toString(),
+            Balance.UNLIMITED.toString()};  // наличие задолженности абонента
 
     public static void main(String[] args) {
         for (int count = 0; count < nameInit.length; count++) {
