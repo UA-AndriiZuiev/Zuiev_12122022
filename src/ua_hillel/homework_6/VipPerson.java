@@ -16,6 +16,6 @@ public class VipPerson extends Person implements CreateFormPerson {
 
     @Override
     public String formPerson() {
-        return "Card : " + name + " " + surname + " age " + age + " phone number " + phone + "VIP Status - " + Cards.GC;
+        return "Form : " + name + " " + surname + " age " + age + " phone number " + phone + " VIP Status - " + Cards.GC;
     }
 }

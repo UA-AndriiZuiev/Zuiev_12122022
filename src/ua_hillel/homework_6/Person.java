@@ -18,10 +18,10 @@ public class Person implements CreditPerson, CreateFormPerson {
     private int age;
 
     @Override
-    public boolean getCreditStatus() throws Exception {
+    public String getCreditStatus() throws Exception {
         int INN = 0;
         System.out.println("Enter the INN - ");
-
+        //============= Ошибка при вводе символов =========================//
         try {
             INN = scanner.nextInt();
         } catch (Exception e) {
@@ -29,17 +29,15 @@ public class Person implements CreditPerson, CreateFormPerson {
         }
 
         if (INN >= 50000) {     //  умовний пошук ІНН у БД боржників
-            System.out.println("The person doesn't have a debt ");
-            return true;
+            return "The person doesn't have a debt ";
         } else {
-            System.out.println("The person have a debt ");
-            return false;
+            return "The person have a debt ";
         }
     }
 
     @Override
     public String formPerson() {
-        return "Card : " + name + " " + surname + " age " + age + " phone number " + phone;
+        return "Form : " + name + " " + surname + " age " + age + " phone number " + phone;
     }
 
 }
