@@ -2,7 +2,7 @@ package ua_hillel.homework_6;
 
 import java.util.Scanner;
 
-public class Person implements CreditPerson {
+public class Person implements CreditPerson, CreateFormPerson {
     Scanner scanner = new Scanner(System.in);
 
     public Person(String name, String surname, int age, String phone) {
@@ -16,11 +16,6 @@ public class Person implements CreditPerson {
     private String surname;
     private String phone;
     private int age;
-
-    public String cardPerson() {
-        return "Card : " + name + " " + surname + " age " + age + " phone number " + phone;
-    }
-
 
     @Override
     public boolean getCreditStatus() throws Exception {
@@ -41,4 +36,10 @@ public class Person implements CreditPerson {
             return false;
         }
     }
+
+    @Override
+    public String formPerson() {
+        return "Card : " + name + " " + surname + " age " + age + " phone number " + phone;
+    }
+
 }
