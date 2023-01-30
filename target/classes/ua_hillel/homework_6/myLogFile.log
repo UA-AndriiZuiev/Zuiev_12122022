@@ -292,3 +292,111 @@ java.io.FileNotFoundException: C:\Temp\DataBase.txt (Не удается най�
 	at java.base/java.io.FileReader.<init>(FileReader.java:60)
 	at ua_hillel.homework_6.FindPerson.FindPerson(FindPerson.java:11)
 	at ua_hillel.homework_6.Main.main(Main.java:41)
+2023-01-30 03:32:09 DEBUG MyLogger - Level - Debug
+java.io.FileNotFoundException: C:\input.txt (Не удается найти указанный файл)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at ua_hillel.homework_6.Main.main(Main.java:13)
+2023-01-30 03:32:09 INFO  MyLogger - Level - Info
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at ua_hillel.homework_6.Main.main(Main.java:21)
+2023-01-30 03:32:25 ERROR MyLogger - Level - Error
+java.io.FileNotFoundException: А:\Temp\test.txt (Системе не удается найти указанный путь)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at ua_hillel.homework_6.SavePerson.SavePerson(SavePerson.java:11)
+	at ua_hillel.homework_6.Main.main(Main.java:40)
+2023-01-30 03:32:25 WARN  MyLogger - Level - Warn
+java.io.FileNotFoundException: C:\Temp\DataBase.txt (Не удается найти указанный файл)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at ua_hillel.homework_6.FindPerson.FindPerson(FindPerson.java:11)
+	at ua_hillel.homework_6.Main.main(Main.java:41)
+2023-01-30 04:11:04 DEBUG MyLogger - Level - Debug
+java.io.FileNotFoundException: C:\input.txt (Не удается найти указанный файл)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at ua_hillel.homework_6.Main.main(Main.java:13)
+2023-01-30 04:11:04 INFO  MyLogger - Level - Info
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at ua_hillel.homework_6.Main.main(Main.java:21)
+2023-01-30 04:16:00 ERROR MyLogger - Level - Error
+java.io.FileNotFoundException: А:\Temp\test.txt (Системе не удается найти указанный путь)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at ua_hillel.homework_6.SavePerson.SavePerson(SavePerson.java:11)
+	at ua_hillel.homework_6.Main.main(Main.java:40)
+2023-01-30 04:16:00 WARN  MyLogger - Level - Warn
+java.io.FileNotFoundException: C:\Temp\DataBase.txt (Не удается найти указанный файл)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at ua_hillel.homework_6.FindPerson.FindPerson(FindPerson.java:11)
+	at ua_hillel.homework_6.Main.main(Main.java:41)
+2023-01-30 04:17:50 DEBUG MyLogger - Level - Debug
+java.io.FileNotFoundException: C:\input.txt (Не удается найти указанный файл)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at ua_hillel.homework_6.Main.main(Main.java:13)
+2023-01-30 04:17:50 INFO  MyLogger - Level - Info
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at ua_hillel.homework_6.Main.main(Main.java:21)
+2023-01-30 04:17:54 INFO  MyLogger - Level - Info
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at ua_hillel.homework_6.Person.getCreditStatus(Person.java:24)
+	at ua_hillel.homework_6.Main.main(Main.java:32)
+2023-01-30 04:17:55 INFO  MyLogger - Level - Info
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at ua_hillel.homework_6.Person.getCreditStatus(Person.java:24)
+	at ua_hillel.homework_6.Main.main(Main.java:33)
+2023-01-30 04:17:58 INFO  MyLogger - Level - Info
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at ua_hillel.homework_6.Person.getCreditStatus(Person.java:24)
+	at ua_hillel.homework_6.Main.main(Main.java:34)
+2023-01-30 04:17:58 ERROR MyLogger - Level - Error
+java.io.FileNotFoundException: А:\Temp\test.txt (Системе не удается найти указанный путь)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at ua_hillel.homework_6.SavePerson.SavePerson(SavePerson.java:11)
+	at ua_hillel.homework_6.Main.main(Main.java:40)
+2023-01-30 04:17:58 WARN  MyLogger - Level - Warn
+java.io.FileNotFoundException: C:\Temp\DataBase.txt (Не удается найти указанный файл)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at ua_hillel.homework_6.FindPerson.FindPerson(FindPerson.java:11)
+	at ua_hillel.homework_6.Main.main(Main.java:41)

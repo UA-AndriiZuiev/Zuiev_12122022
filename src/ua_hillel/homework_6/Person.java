@@ -3,7 +3,11 @@ package ua_hillel.homework_6;
 import java.util.Scanner;
 
 public class Person implements CreditPerson, CreateFormPerson {
-    Scanner scanner = new Scanner(System.in);
+    private String name;
+    private String surname;
+    private String phone;
+    private int age;
+    private Scanner scanner = new Scanner(System.in);
 
     public Person(String name, String surname, int age, String phone) {
         this.name = name;
@@ -11,12 +15,6 @@ public class Person implements CreditPerson, CreateFormPerson {
         this.age = age;
         this.phone = phone;
     }
-
-    private String name;
-    private String surname;
-    private String phone;
-    private int age;
-
     @Override
     public String getCreditStatus() throws Exception {
         int INN = 0;
